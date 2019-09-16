@@ -50,7 +50,7 @@ h1 {
   margin: 0; /*Här har jag ändrat till margin 0, obs kommer att ändra alla h1!*/
 }
 
-p {
+.pmain {
   font-family: "Fira Sans", sans-serif;
   color: rgb(101, 101, 101);
   font-size: 12px;
@@ -140,23 +140,46 @@ a:hover {
   flex-direction: column;
   justify-content: flex-start;
   margin-top: 60px;
-  margin-left: 60px;
+  margin-left: 90px;
   margin-right: 60px;
 }
-.pmain {
-  color: rgb(62, 59, 59);
-}
 
-.loremipsum {
+.lorem {
   grid-area: loremipsum;
   background: rgb(154, 138, 138);
   display: flex;
+}
+.loremcontent {
+  display: flex;
   justify-content: center;
+  margin-top: 60px;
+  margin-right: 90px;
+  margin-left: 30px;
 }
 
 .about {
   background: orange;
   grid-area: about;
+  display: flex;
+}
+
+.aboutcontent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 200px;
+  margin-right: 200px;
+  text-align: center;
+}
+
+p {
+  line-height: 20px;
+  color: rgb(101, 101, 101);
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  margin-top: 30px;
 }
 
 .box {
