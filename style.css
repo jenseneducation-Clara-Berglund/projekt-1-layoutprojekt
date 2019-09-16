@@ -165,12 +165,97 @@ a:hover {
 
 .aboutcontent {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+  margin-top: -100px;
+  text-align: center;
+}
+.aboutcontent > p {
+  text-align: center;
   margin-left: 200px;
   margin-right: 200px;
-  text-align: center;
+}
+.piccontainer {
+  display: flex;
+  justify-content: center;
+}
+
+.piccontainerbackground {
+  background: white;
+  width: 200px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 5px;
+}
+.piccontainer p {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 9px;
+}
+
+.children {
+  display: flex;
+  flex-direction: column;
+}
+
+#childimagecontainer {
+  display: flex;
+  justify-content: center;
+  height: 120px;
+  border-radius: 5px;
+  background: rgb(191, 221, 232);
+  overflow: hidden;
+  margin-top: -20px;
+}
+
+#childimagecontainer > img {
+  /* gäller alla bilder under childimagecontainer*/
+  width: 70px;
+  margin-top: 10px;
+  margin-bottom: -20px;
+}
+
+.justright {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#adultimagecontainer {
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  height: 120px;
+  background: orange;
+  overflow: hidden;
+  margin-top: -20px;
+}
+
+#adultimagecontainer > img {
+  width: 70px;
+  margin-top: 20px;
+  margin-bottom: -170px;
+}
+
+.oldfart {
+  display: flex;
+  flex-direction: column;
+}
+#oldfartimagecontainer {
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  height: 120px;
+  background: coral;
+  overflow: hidden;
+  margin-top: -20px;
+}
+
+#oldfartimagecontainer > img {
+  width: 70px;
+  margin-top: 20px;
+  margin-bottom: -130px;
 }
 
 p {
