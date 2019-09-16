@@ -1,0 +1,165 @@
+body {
+  max-width: 800px;
+  margin: auto;
+  background: rgb(222, 220, 220);
+}
+
+div {
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 200px 200px 50px 500px 550px 275px 275px 50px 300px;
+  grid-template-areas:
+    "top top top top top top header2 header2 header2 header2 header2 header2"
+    "top top top top top top header3 header3 header3 header3 header3 header3"
+    "nav nav nav nav nav nav nav nav nav nav nav nav"
+    "main main main main main main main main main main main main"
+    "about about about about about about about about about about about about"
+    "box box box box box1 box1 box1 box1 box2 box2 box2 box2"
+    "box3 box3 box3 box3 box4 box4 box4 box4 box5 box5 box5 box5"
+    "buttonup buttonup buttonup buttonup buttonup buttonup buttonup buttonup buttonup buttonup buttonup buttonup"
+    "extra extra extra extra extra extra extra extra extra extra extra extra";
+}
+
+/* Det här har jag ändrat */
+/*style för "we've got you covered"*/
+
+.header {
+  background: rgb(191, 221, 232);
+  grid-area: top;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.familyimage {
+  width: 50%;
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0px;
+}
+
+.headercontent {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 32px;
+  margin: 0; /*Här har jag ändrat till margin 0, obs kommer att ändra alla h1!*/
+}
+
+p {
+  font-family: "Fira Sans", sans-serif;
+  color: rgb(101, 101, 101);
+  font-size: 12px;
+  font-weight: 600; /*la till font weight*/
+  letter-spacing: -0.5px;
+  line-height: 1.2rem; /* här har jag ändrat*/
+  margin-top: 10px;
+  margin-bottom: 0; /* här har jag ändrat*/
+}
+
+span {
+  color: white; /*lagt till span för att få texten vit */
+}
+
+/*slut på style för "we've got you covered"*/
+.button {
+  background: white;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 9px; /*minskat font-size (gäller alla button)*/
+  width: 100px;
+  border-radius: 15px;
+  margin-top: 40px;
+  padding: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.header2 {
+  background: coral;
+  grid-area: header2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.question {
+  font-size: 9px;
+}
+
+.header3 {
+  background: orange;
+  grid-area: header3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ }
+
+.question2 {
+  font-size:9px;
+}
+
+h2 {
+  font-size: 23px;
+  color: white;
+  margin-top: 0; /* lagt till margin-top & margin bottom */
+  margin-bottom: 0;
+}
+
+.nav {
+  background: rgb(222, 220, 220);
+  grid-area: nav;
+}
+
+.main {
+  background: rgb(202, 130, 130);
+  grid-area: main;
+}
+
+.about {
+  background: orange;
+  grid-area: about;
+}
+.box {
+  background: rgb(174, 208, 220);
+  grid-area: box;
+}
+.box1 {
+  background: white;
+  grid-area: box1;
+}
+.box2 {
+  background: rgb(222, 220, 220);
+  grid-area: box2;
+}
+
+.box3 {
+  background: white;
+  grid-area: box3;
+}
+.box4 {
+  background: coral;
+  grid-area: box4;
+}
+.box5 {
+  background: white;
+  grid-area: box5;
+}
+
+.buttonup {
+  background: darkgrey;
+  grid-area: buttonup;
+}
+
+.extra {
+  background: grey;
+  grid-area: extra;
+}
+
+
+}
