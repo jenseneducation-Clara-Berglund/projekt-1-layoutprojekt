@@ -21,8 +21,7 @@ div {
     "extra extra extra extra extra extra extra extra extra extra extra extra";
 }
 
-/* Det här har jag ändrat */
-/*style för "we've got you covered"*/
+/*style för header*/
 
 .header {
   background: rgb(191, 221, 232);
@@ -66,7 +65,6 @@ span {
   color: white; /*lagt till span för att få texten vit */
 }
 
-/*slut på style för "we've got you covered"*/
 .button {
   background: white;
   font-family: "Fira Sans", sans-serif;
@@ -98,10 +96,10 @@ span {
   justify-content: center;
   align-items: center;
   flex-direction: column;
- }
+}
 
 .question2 {
-  font-size:9px;
+  font-size: 9px;
 }
 
 h2 {
@@ -111,20 +109,52 @@ h2 {
   margin-bottom: 0;
 }
 
+/*slut på style för header*/
+
 .nav {
   background: rgb(222, 220, 220);
   grid-area: nav;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: grey;
+}
+a {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 10px;
+  color: grey;
+  text-decoration-line: none;
+}
+a:hover {
+  color: black;
 }
 
 .main {
-  background: rgb(202, 130, 130);
+  background: rgb(154, 138, 138);
   grid-area: main;
+}
+
+.yourpersonal {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.pmain {
+  color: rgb(62, 59, 59);
+}
+
+.loremipsum {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .about {
   background: orange;
   grid-area: about;
 }
+
 .box {
   background: rgb(174, 208, 220);
   grid-area: box;
@@ -159,7 +189,4 @@ h2 {
 .extra {
   background: grey;
   grid-area: extra;
-}
-
-
 }
