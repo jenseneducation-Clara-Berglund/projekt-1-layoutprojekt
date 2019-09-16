@@ -13,7 +13,7 @@ div {
     "top top top top top top header2 header2 header2 header2 header2 header2"
     "top top top top top top header3 header3 header3 header3 header3 header3"
     "nav nav nav nav nav nav nav nav nav nav nav nav"
-    "main main main main main main main main main main main main"
+    "main main main main main main loremipsum loremipsum loremipsum loremipsum loremipsum loremipsum"
     "about about about about about about about about about about about about"
     "box box box box box1 box1 box1 box1 box2 box2 box2 box2"
     "box3 box3 box3 box3 box4 box4 box4 box4 box5 box5 box5 box5"
@@ -132,22 +132,26 @@ a:hover {
 .main {
   background: rgb(154, 138, 138);
   grid-area: main;
+  display: flex;
 }
 
-.yourpersonal {
+.maincontent {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  margin-top: 60px;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 .pmain {
   color: rgb(62, 59, 59);
 }
 
 .loremipsum {
+  grid-area: loremipsum;
+  background: rgb(154, 138, 138);
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  justify-content: center;
 }
 
 .about {
