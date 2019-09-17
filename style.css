@@ -49,16 +49,16 @@ div {
 
 h1 {
   font-size: 40px;
-  margin: 0; /*Här har jag ändrat till margin 0, obs kommer att ändra alla h1!*/
+  margin: 0;
 }
 
 .pmain {
   font-family: "Fira Sans", sans-serif;
   color: rgb(58, 55, 55);
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 600; /*la till font weight*/
-  letter-spacing: -0.5px;
-  line-height: 1.2rem; /* här har jag ändrat*/
+  letter-spacing: 0.2px;
+  line-height: 1.3rem; /* här har jag ändrat*/
   margin-top: 10px;
   margin-bottom: 0; /* här har jag ändrat*/
 }
@@ -90,8 +90,8 @@ span {
   align-items: center;
   flex-direction: column;
 }
-.question {
-  font-size: 9px;
+.header2 p {
+  font-size: 11px;
 }
 
 .header3 {
@@ -103,12 +103,12 @@ span {
   flex-direction: column;
 }
 
-.question2 {
-  font-size: 9px;
+.header3 p {
+  font-size: 11px;
 }
 
 h2 {
-  font-size: 23px;
+  font-size: 25px;
   color: white;
   margin-top: 0; /* lagt till margin-top & margin bottom */
   margin-bottom: 0;
@@ -147,9 +147,9 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-top: 60px;
-  margin-left: 90px;
-  margin-right: 60px;
+  margin-top: 80px;
+  margin-left: 125px;
+  margin-right: 85px;
 }
 .main button {
   box-shadow: 0px 1px rgb(133, 127, 127);
@@ -162,9 +162,9 @@ a:hover {
 .loremcontent {
   display: flex;
   justify-content: center;
-  margin-top: 60px;
-  margin-right: 90px;
-  margin-left: 30px;
+  margin-top: 80px;
+  margin-right: 150px;
+  margin-left: 40px;
 }
 
 .about {
@@ -188,12 +188,13 @@ a:hover {
 }
 .aboutcontent > p {
   color: rgb(85, 84, 84);
-  font-size: 10px;
+  width: 40%;
+  font-size: 13px;
   line-height: 16px;
   margin-top: 10px;
   text-align: center;
-  margin-left: 200px;
-  margin-right: 200px;
+  /* margin-left: 250px;
+  margin-right: 250px; */
 }
 .piccontainer {
   display: flex;
@@ -203,7 +204,7 @@ a:hover {
 
 .piccontainerbackground {
   background: white;
-  width: 180px;
+  width: 220px;
   padding-left: 8px;
   padding-right: 8px;
   border-radius: 5px;
@@ -216,7 +217,7 @@ h3 {
 .piccontainer p {
   font-family: "Fira Sans", sans-serif;
   color: darkgrey;
-  font-size: 9px;
+  font-size: 11px;
   margin-top: -5px;
   margin-left: 10px;
   margin-right: 10px;
@@ -353,46 +354,6 @@ p {
   background: white;
   grid-area: box5;
 }
-
-/* 
-.done > h4 {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-.chooseaplan {
-  background: rgb(222, 220, 220);
-  grid-area: box2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.answersome {
-  background: white;
-  grid-area: box3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.wait {
-  background: coral;
-  grid-area: box4;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.done {
-  background: white;
-  grid-area: box5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-} */
 
 h4 {
   font-size: 25px;
