@@ -171,7 +171,16 @@ a:hover {
   margin-top: -100px;
   text-align: center;
 }
+
+.aboutcontent > h1 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
 .aboutcontent > p {
+  color: rgb(85, 84, 84);
+  font-size: 10px;
+  line-height: 16px;
+  margin-top: 10px;
   text-align: center;
   margin-left: 200px;
   margin-right: 200px;
@@ -179,18 +188,29 @@ a:hover {
 .piccontainer {
   display: flex;
   justify-content: center;
+  margin-top: -20px;
 }
 
 .piccontainerbackground {
   background: white;
-  width: 200px;
+  width: 180px;
   padding-left: 8px;
   padding-right: 8px;
   border-radius: 5px;
 }
+
+h3 {
+  font-size: 13px;
+}
 .piccontainer p {
   font-family: "Fira Sans", sans-serif;
+  color: darkgrey;
   font-size: 9px;
+  margin-top: -5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-bottom: 30px;
+  line-height: 14px;
 }
 
 .children {
