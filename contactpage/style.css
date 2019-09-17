@@ -1,0 +1,172 @@
+body {
+  max-width: 1000px;
+  margin: auto;
+  background: rgb(222, 220, 220);
+}
+
+div {
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 325px 65px 525px 400px 300px;
+  grid-template-areas:
+    "top top top top top top top top top top top top"
+    "nav nav nav nav nav nav nav nav nav nav nav nav"
+    "main main main main main main emailcontainer emailcontainer emailcontainer emailcontainer emailcontainer emailcontainer"
+    "map map map map map map map map map map map map"
+    "extra extra extra extra extra extra extra extra extra extra extra extra";
+}
+
+.header {
+  background: #c2deea;
+  grid-area: top;
+  display: flex;
+  flex-direction: row;
+}
+
+.headercontent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 38%;
+  margin-top: -15px;
+}
+
+.pic {
+  height: 300px;
+  align-self: flex-end;
+  margin-left: 5%;
+}
+
+h1 {
+  font-size: 42px;
+  color: white;
+  margin-top: 100px;
+  font-weight: 900;
+}
+
+span {
+  color: black;
+}
+
+.nav {
+  background: white;
+  grid-area: nav;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+a {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: rgb(197, 193, 193);
+  text-decoration-line: none;
+}
+
+a:hover {
+  color: black;
+}
+
+.main {
+  background: rgb(174, 167, 167);
+  grid-area: main;
+  display: flex;
+}
+
+.maincontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 15px;
+  margin-left: 90px;
+  margin-right: 60px;
+}
+
+p {
+  line-height: 20px;
+  color: rgb(174, 167, 167);
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  margin-top: 30px;
+}
+
+.emailcontainer {
+  background: rgb(174, 167, 167);
+  grid-area: emailcontainer;
+  display: flex;
+}
+
+.emailcontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.emailcontent label {
+  color: lightgrey;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.youremail {
+  display: flex;
+  flex-direction: column;
+}
+
+.emailinput {
+  width: 325px;
+  height: 38px;
+  margin-top: 5px;
+  border: 1px;
+  border-radius: 2px;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.yourmessage {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+textarea {
+  width: 300px;
+  height: 130px;
+  margin-top: 5px;
+  border: 1px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  padding: 15px;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.button {
+  background: white;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 8px;
+  width: 100px;
+  border-radius: 15px;
+  margin-top: 30px;
+  margin-left: auto;
+  padding: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.map {
+  grid-area: map;
+}
+
+.extra {
+  background: #787473;
+  grid-area: extra;
+}
