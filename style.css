@@ -8,7 +8,7 @@ div {
   max-width: 1000px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 250px 250px 65px 500px 550px 275px 275px 70px 300px;
+  grid-template-rows: 250px 250px 65px 500px 550px 350px 350px 70px 300px;
   grid-template-areas:
     "top top top top top top header2 header2 header2 header2 header2 header2"
     "top top top top top top header3 header3 header3 header3 header3 header3"
@@ -26,16 +26,18 @@ div {
 .header {
   background: #c2deea;
   grid-area: top;
-  position: relative;
   display: flex;
   justify-content: center;
+  background-image: url(/images/family.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: 95% 100%;
 }
-
 .familyimage {
+  display: flex;
+  align-self: flex-end;
   width: 50%;
-  position: absolute;
-  right: 0.5rem;
-  bottom: 0px;
+  margin-bottom: 0px;
 }
 
 .headercontent {
@@ -305,14 +307,54 @@ p {
   text-align: center;
 }
 
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px; /* padding för att siffran inte ska ligga kant i kant */
+}
+
+.box h4 {
+  width: 100%;
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+
+.box p {
+  width: 100%;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 0px;
+}
+
 .answerafew {
   background: white;
   grid-area: box1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
+
+.chooseaplan {
+  background: rgb(222, 220, 220);
+  grid-area: box2;
+}
+
+.answersome {
+  background: white;
+  grid-area: box3;
+}
+
+.wait {
+  background: coral;
+  grid-area: box4;
+}
+
+.done {
+  background: white;
+  grid-area: box5;
+}
+
+/* 
 .done > h4 {
   display: flex;
   justify-content: flex-start;
@@ -350,7 +392,7 @@ p {
   justify-content: center;
   align-items: center;
   text-align: center;
-}
+} */
 
 h4 {
   font-size: 25px;
@@ -361,7 +403,7 @@ h4 {
 }
 
 .buttonup {
-  background: darkgrey;
+  background: rgb(174, 167, 167);
   grid-area: buttonup;
   display: flex;
   justify-content: center;
@@ -370,10 +412,22 @@ h4 {
   text-align: center;
 }
 
-.buttonup > p {
+.buttonup p {
   color: rgb(55, 54, 54);
   font-size: 15px;
+  margin-top: 0px;
+  margin-bottom: 40px;
+  text-align: center;
 }
+
+#chevronup {
+  transform: rotate(270deg);
+  font-size: 50px;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
 .extra {
   background: grey;
   grid-area: extra;

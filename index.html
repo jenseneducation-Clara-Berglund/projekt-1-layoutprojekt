@@ -14,8 +14,7 @@
 
   <body>
     <div class="container">
-      <header class="header">
-        <img class="familyimage" src="images/family.png" />
+      <header id="top" class="header">
         <div class="headercontent">
           <h1>We´ve got you Covered.</h1>
           <p class="pmain">
@@ -25,6 +24,7 @@
           </p>
           <button class="button">JOIN NOW</button>
         </div>
+        <!-- <img class="familyimage" src="images/family.png" /> -->
       </header>
 
       <div class="header2">
@@ -37,10 +37,10 @@
       </div>
 
       <div class="nav">
-        <a href="#">Home</a>
+        <a href="#top">Home</a>
         <a href="#">Our offer</a>
         <a href="#">Why us</a>
-        <a href="#">Contact</a>
+        <a href="contactpage/index.html">Contact</a>
       </div>
 
       <main class="main">
@@ -124,38 +124,40 @@
           </p>
         </div>
       </div>
-
       <div class="howitworks">
         <h1>How <br />It works?</h1>
       </div>
 
-      <div class="answerafew">
+      <div class="answerafew box">
         <h4>01<h4>
         <p>Answer a few questions about yourself</p>
       </div>
 
-      <div class="chooseaplan">
+      <div class="chooseaplan box">
         <h4>02</h4>
         <p>Choose a plan. Get a quote.</p>
       </div>
 
-      <div class="answersome">
+      <div class="answersome box">
           <h4>03</h4>
         <p>Answer some questions about your medical history.</p>
       </div>
 
-      <div class="wait">
+      <div class="wait box">
           <h4>04</h4>
         <p>Wait 90 sec to get approved.</p>
       </div>
 
-      <div class="done">
+      <div class="done box">
           <h4>05</h4>
         <p>Done!</p>
       </div>
 
       <div class="buttonup">
-         <p>Take me up again!</p>
+        <a href="#top">
+          <p id="chevronup">›</p>
+          <p>Take me up again!</p>
+        </a>
       </div>
       <extra class="extra"></extra>
     </div>
