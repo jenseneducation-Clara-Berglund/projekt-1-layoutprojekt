@@ -47,30 +47,21 @@ div {
   margin-top: 80px;
 }
 
-h1 {
-  font-size: 40px;
-  margin: 0;
-}
-
 .pmain {
   font-family: "Fira Sans", sans-serif;
   color: rgb(58, 55, 55);
   font-size: 13px;
-  font-weight: 600; /*la till font weight*/
+  font-weight: 600;
   letter-spacing: 0.2px;
-  line-height: 1.3rem; /* här har jag ändrat*/
+  line-height: 1.3rem;
   margin-top: 10px;
-  margin-bottom: 0; /* här har jag ändrat*/
-}
-
-span {
-  color: white; /*lagt till span för att få texten vit */
+  margin-bottom: 0;
 }
 
 .button {
   background: white;
   font-family: "Fira Sans", sans-serif;
-  font-size: 9px; /*minskat font-size (gäller alla button)*/
+  font-size: 9px;
   width: 100px;
   border-radius: 15px;
   margin-top: 40px;
@@ -107,14 +98,7 @@ span {
   font-size: 11px;
 }
 
-h2 {
-  font-size: 25px;
-  color: white;
-  margin-top: 0; /* lagt till margin-top & margin bottom */
-  margin-bottom: 0;
-}
-
-/*slut på style för header*/
+/*start nav*/
 
 .nav {
   background: rgb(222, 220, 220);
@@ -136,6 +120,8 @@ a {
 a:hover {
   color: black;
 }
+
+/*start main*/
 
 .main {
   background: rgb(174, 167, 167);
@@ -167,6 +153,8 @@ a:hover {
   margin-left: 40px;
 }
 
+/*start about*/
+
 .about {
   background: orange;
   grid-area: about;
@@ -193,9 +181,8 @@ a:hover {
   line-height: 16px;
   margin-top: 10px;
   text-align: center;
-  /* margin-left: 250px;
-  margin-right: 250px; */
 }
+
 .piccontainer {
   display: flex;
   justify-content: center;
@@ -211,9 +198,6 @@ a:hover {
   box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.1);
 }
 
-h3 {
-  font-size: 13px;
-}
 .piccontainer p {
   font-family: "Fira Sans", sans-serif;
   color: darkgrey;
@@ -241,7 +225,6 @@ h3 {
 }
 
 #childimagecontainer > img {
-  /* gäller alla bilder under childimagecontainer*/
   width: 70px;
   margin-top: 10px;
   margin-bottom: -20px;
@@ -290,14 +273,7 @@ h3 {
   margin-bottom: -130px;
 }
 
-p {
-  line-height: 20px;
-  color: rgb(101, 101, 101);
-  font-family: "Fira Sans", sans-serif;
-  font-weight: 700;
-  font-size: 12px;
-  margin-top: 30px;
-}
+/*start boxar*/
 
 .howitworks {
   background: #c2deea;
@@ -312,7 +288,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px; /* padding för att siffran inte ska ligga kant i kant */
+  padding: 30px;
 }
 
 .box h4 {
@@ -355,13 +331,7 @@ p {
   grid-area: box5;
 }
 
-h4 {
-  font-size: 25px;
-  color: rgb(179, 174, 174);
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
+/*knapp uppåt start*/
 
 .buttonup {
   background: rgb(174, 167, 167);
@@ -389,7 +359,49 @@ h4 {
   text-align: center;
 }
 
-.extra {
+/*start footer*/
+
+.footer {
   background: grey;
   grid-area: extra;
 }
+
+/* Fonter & övriga */
+h1 {
+  font-size: 40px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 25px;
+  color: white;
+  margin-top: 0; /* lagt till margin-top & margin bottom */
+  margin-bottom: 0;
+}
+
+h3 {
+  font-size: 13px;
+}
+
+h4 {
+  font-size: 25px;
+  color: rgb(179, 174, 174);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+p {
+  line-height: 20px;
+  color: rgb(101, 101, 101);
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  margin-top: 30px;
+}
+
+span {
+  color: white; /*lagt till span för att få texten vit */
+}
+
+/* slut på fonter & övriga */
